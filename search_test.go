@@ -15,6 +15,8 @@ func TestSearch(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	log.Printf("%+v", images)
+	for _, img := range images {
+		log.Printf("%+v", img)
+	}
 	assert.NotNil(t, images)
 }

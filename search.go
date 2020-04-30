@@ -24,7 +24,7 @@ type SearchedImage struct {
 	AccessPolicy string         `json:"access_policy"`
 	Accessible   bool           `json:"accessible"`
 	CreatedAt    time.Time      `json:"created_at"`
-	Desc         string
+	Desc         string         `json:"desc"`
 }
 
 type ImageMetadata struct {
